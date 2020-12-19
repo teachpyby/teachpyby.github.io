@@ -13,7 +13,7 @@
 ## Вывод на экран
 
 ```python
->>> print("Hello, World!")
+>>> print("Привет!")
 Hello, World!
 ```
 
@@ -22,10 +22,9 @@ Hello, World!
 ## Пользовательский ввод
 
 ```python
->>> hello = input()
-"Hello!"
->>> print(hello)
-Hello!
+>>> input()
+Привет!
+'Привет!'
 ```
 
 
@@ -52,6 +51,16 @@ y = 10
 x = 2 + y
 ```
 
+
+
+### Пример. Ввод и вывод данных
+
+```python
+print("Введи свое имя:")
+name = input()
+greeting = "Привет, " + name + "!"
+print(greeting)
+```
 
 
 ### Условия
