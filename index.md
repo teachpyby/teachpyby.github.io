@@ -151,6 +151,8 @@ print('end of if')
 ![image](https://upload.wikimedia.org/wikipedia/commons/c/c9/2D_Cartesian_Coordinates.PNG)
 
 
+
+
 ```python
 x = int(input())
 y = int(input())
