@@ -68,10 +68,29 @@ else:
 ```
 
 
+## Длинное решение
+
+```python
+dx = x1 - x0
+dy = y1 - y0
+
+if (dx == 1 and dy == 2) or (dx == 2 and dy == 1):
+    print("YES")
+elif (dx == -1 and dy == 2) or (dx == -2 and dy == 1):
+    print("YES")
+elif (dx == -1 and dy == -2) or (dx == -2 and dy == -1):
+    print("YES")
+elif (dx == 1 and dy == -2) or (dx == 2 and dy == -1):
+    print("YES")
+else:
+    print("NO")
+```
+
+
 ## Разбор строки с координатами
 
 ```python
-move = input()     # => d5f7
+move = input()     # => 'd5f7'
 x0 = ord(move[0])  # ord('d')  => 100
 y0 = int(move[1])  # int('5')  => 5
 x1 = ord(move[2])  # ord('f')  => 101
