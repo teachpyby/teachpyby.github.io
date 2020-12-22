@@ -144,7 +144,6 @@ radians(x)
 Дано положительное действительное число X. Выведите его первую цифру после десятичной точки. (4. **9** 234523)
 
 
-
 #### Решение
 ``` python
 import math
@@ -155,4 +154,86 @@ print(int(a * 10) % 10)
 
 ```
 
+
+
+## Цикл for
+```python
+i = 1
+for color in 'red', 'orange', 'yellow',
+  'green', 'cyan', 'blue', 'violet':
+    print('#', i, ' color of rainbow is ', color, sep = '')
+    i += 1
+
+####
+cities = ['Minsk', 'Gomel', 'Grodno',
+  'Vitebsk', 'Mogilev', 'Brest']
+for city in cities:
+  print(city, ' - city in Belarus')
+
+```
+
+
+
+## range
+
+```python
+for i in range(4):  # равносильно инструкции for i in 0, 1, 2, 3:
+  print(i ** 2)
+```
+
+
+
+## Цикл while
+
+```python
+i = 1
+while i <= 10:
+  print(i ** 2)
+  i += 1
+```
+
+```python
+i = 1
+while i <= 10:
+  print(i)
+  i += 1
+else:
+  print('Цикл окончен, i =', i)
+```
+
+
+```python [|5|7]
+a = int(input())
+while a != 0:
+  if a < 0:
+    print('Встретилось отрицательное число', a)
+    break
+  a = int(input())
+print('Введен 0')
+```
+
+
+
+## Утренняя пробежка
+Условие
+В первый день спортсмен пробежал **`x`** километров, а затем он каждый день увеличивал пробег на **`10%`**
+от предыдущего значения. По данному числу **`y`** определите номер дня, на который пробег спортсмена составит не менее **`y`** километров.
+
+Программа получает на вход **действительные** числа `x` и `y` и должна вывести одно натуральное число.
+
+
+## Решение
+
+```python
+a = float(input())
+b = float(input())
+
+total = a
+counter = 1
+
+while total < b:
+  total = total * 1.1
+  counter += 1
+print(counter)
+```
 
