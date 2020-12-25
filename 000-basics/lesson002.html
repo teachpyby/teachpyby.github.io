@@ -6,17 +6,17 @@
 
 		<title>Вычисления. Модуль math. Циклы</title>
 
-		<link rel="stylesheet" href="reveal.js/dist/reset.css">
-		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
-		<link rel="stylesheet" href="reveal.js/dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="../reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/dist/theme/black.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown="slides/lesson02.md"
+				<section data-markdown="./lesson002.md"
 			         data-separator="^\n\n\n"
 			         data-separator-vertical="^\n\n"
 			         data-separator-notes="^Note:"
@@ -29,23 +29,23 @@
 			</div>
 		</div>
 
-		<script src="reveal.js/dist/reveal.js"></script>
-		<script src="reveal.js/plugin/notes/notes.js"></script>
-		<script src="reveal.js/plugin/markdown/markdown.js"></script>
-		<script src="reveal.js/plugin/highlight/highlight.js"></script>
-		<script src="reveal.js/plugin/math/math.js"></script>
+		<script src="../reveal.js/dist/reveal.js"></script>
+		<script src="../reveal.js/plugin/notes/notes.js"></script>
+		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="../reveal.js/plugin/math/math.js"></script>
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				math: {
-      		mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
-      		config: 'TeX-AMS_HTML-full',
-      		// pass other options into `MathJax.Hub.Config()`
-      		TeX: { Macros: { RR: "{\\bf R}" } }
-    		},
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                math: {
+            mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+            config: 'TeX-AMS_HTML-full',
+            // pass other options into `MathJax.Hub.Config()`
+            TeX: { Macros: { RR: "{\\bf R}" } }
+            },
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
 			});
