@@ -6,7 +6,7 @@
 > одним ходом.
 
 
-![alt text](../assets/knight_move.jpg)
+![alt text](./assets/knight_move.jpg)
 
 
 ## Подготовка
@@ -34,7 +34,7 @@ A''' ( 1, -2), B''' ( 2, -1)
 ```
 
 
-![alt text](../assets/knight_move_dx_dy.png)
+![alt text](./assets/knight_move_dx_dy.png)
 
 
 `$$ (|dx|, dy) $$`
@@ -44,7 +44,7 @@ A''' ( 1, -2), B''' ( 2, -1)
 ```
 
 
-![alt text](../assets/knight_move_absdx_dy.png)
+![alt text](./assets/knight_move_absdx_dy.png)
 
 
 `$$ (|dx|, |dy|) $$`
@@ -54,7 +54,7 @@ A    ( 1,  2), B    ( 2,  1)
 ```
 
 
-![alt text](../assets/knight_move_absdx_absdy.png)
+![alt text](./assets/knight_move_absdx_absdy.png)
 
 
 ```python
@@ -111,7 +111,10 @@ dx = (ord(move[1]) - ord('a')) - (ord(move[0]) - ord('a'))
 ```
 
 
-(Решение)[./solutions/001_knight_move.py]
+## Полное решение
+
+[Решение](./solutions/001_knight_move.py)
+
 
 
 ## Действительные числа
