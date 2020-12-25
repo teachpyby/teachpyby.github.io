@@ -111,6 +111,8 @@ dx = (ord(move[1]) - ord('a')) - (ord(move[0]) - ord('a'))
 ```
 
 
+(Решение)[./solutions/001_knight_move.py]
+
 
 ## Действительные числа
 
