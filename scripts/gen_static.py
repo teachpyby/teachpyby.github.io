@@ -11,8 +11,10 @@ def gen_lessons(directory, template):
     """
     toc = os.path.join(directory, 'toc.txt')
     generated = []
+    print(f':: {directory}  ', end='', flush=True)
 
     if not os.path.exists(toc):
+        print('')
         return generated
 
     for line in open(toc, 'r'):
@@ -25,9 +27,10 @@ def gen_lessons(directory, template):
 
         with open(dst_path, 'w') as out:
             out.write(lesson)
-
+        print('.', end='', flush=True)
         generated.append((dst_path, title))
 
+    print('')
     return generated
 
 parser = argparse.ArgumentParser()
@@ -45,5 +48,4 @@ with open(args.lesson_template, 'r') as reader:
 
 print('Gen dirs')
 for d in args.dir:
-    print(f':: {d}')
     gen_lessons(d, template)
