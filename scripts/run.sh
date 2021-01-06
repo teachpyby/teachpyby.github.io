@@ -6,4 +6,4 @@ echo ""
 echo "> Open http://localhost:$NGINX_PORT/ "
 echo ""
 echo ""
-docker run -v "$(pwd):/var/www/data" -p80:$NGINX_PORT teachpyby.github.io:latest
+docker run -v "$(pwd):/var/www/data" -p$NGINX_PORT:80 teachpyby.github.io:latest
