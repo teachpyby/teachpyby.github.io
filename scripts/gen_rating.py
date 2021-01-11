@@ -10,7 +10,7 @@ def read_rating(file):
         tasks = row[1:]
       else:
         name = row[0]
-        score_list = [int(x) if x else 0 for x in row[1:]]
+        score_list = row[1:]
         score[name] = score_list
 
   return (tasks, score)
@@ -46,18 +46,20 @@ def gen_table(tasks, rating):
 
 
   print("<tbody>", file = out)
-  for k, v in sorted(rating.items(), key = lambda item: -sum(item[1])):
+  for k, v in sorted(rating.items(), key = lambda item: -sum(map(string_to_int, item[1]))):
     print("<tr>", file=out)
     print("  <th>", k, "</th>", file = out)
 
-    score = v + [0] * (len(tasks) - len(v))
-    for s in score:
+    for s in v:
       print("  <td>", s, "</td>", file = out)
-    print(  "<td><b>", sum(v), "</b></td>", file = out)
+    print(  "<td><b>", sum(map(string_to_int, v)), "</b></td>", file = out)
     print("</tr>", file=out)
   print("</tbody>", file = out)
 
   return out.getvalue()
+
+def string_to_int(v):
+  return int(v) if v.isnumeric() else 0
 
 def gen_rating(template, tasks, score):
   return template.replace('{{table}}', gen_table(tasks, score))
