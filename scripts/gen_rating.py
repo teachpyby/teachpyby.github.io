@@ -51,7 +51,13 @@ def gen_table(tasks, rating):
     print("  <th>", k, "</th>", file = out)
 
     for s in v:
-      print("  <td>", s, "</td>", file = out)
+      if s in ['6', '7', '8']:
+        print("  <td><b>", s, "<b/></td>", file = out)
+      elif s == 'x':
+        print('  <td class="text-muted">', s, "</td>", file = out)
+      else:
+        print("  <td>", s, "</td>", file = out)
+
     print(  "<td><b>", sum(map(string_to_int, v)), "</b></td>", file = out)
     print("</tr>", file=out)
   print("</tbody>", file = out)
