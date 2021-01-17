@@ -1,4 +1,4 @@
-import sys, os, argparse
+import chevron, os, argparse
 
 def gen_lessons(directory, template):
     """
@@ -19,9 +19,7 @@ def gen_lessons(directory, template):
 
     for line in open(toc, 'r'):
         slides, title = line.rstrip().split(' ', 1)
-        lesson = template.replace('{{title}}', title)   \
-                         .replace('{{slides}}', slides)
-
+        lesson = chevron.render(template, {'title': title, 'slides': slides})
         dst_file = os.path.basename(slides).replace('.md', '.html')
         dst_path = os.path.join(directory, dst_file)
 
