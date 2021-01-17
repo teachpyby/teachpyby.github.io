@@ -1,16 +1,23 @@
+PYTHON = pipenv run python
+
+install:
+	pipenv install
+
 gen_static:
-	python3 scripts/gen_static.py \
+	${PYTHON} scripts/gen_static.py \
 		--dir 000-basics  \
 		--dir 100-pygame  \
 		--lesson_template template/lesson.html
 
 gen_rating:
-	python3 scripts/gen_rating.py \
+	${PYTHON} scripts/gen_rating.py \
 		--rating rating/rating.csv \
 		--template template/rating.html \
 		--output rating/2021.html
 
-serve:
+gen_all: gen_static gen_rating
+
+serve: gen_all
 	scripts/run.sh
 
-.PHONY: gen_static serve
+.PHONY: gen_static gen_rating serve install
