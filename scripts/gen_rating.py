@@ -1,4 +1,4 @@
-import sys, io, os, argparse, csv
+import chevron, argparse, csv
 
 def read_rating(file):
   tasks = None
@@ -15,60 +15,47 @@ def read_rating(file):
 
   return (tasks, score)
 
-def gen_table(tasks, rating):
-  out = io.StringIO()
+def gen_data(tasks, rating):
+  data = {
+    'block': [],
+    'task': [],
+    'student': []
+  }
 
-  print("<thead>", file = out)
-  print("  <tr>", file = out)
-  print("  <th></th>", file = out)
   block = None
   count = 0
   for t in tasks:
     b, _ = t.split(".")
     if block != b:
       if block != None:
-        print(f'  <th colspan="{count}">{block}</th>', file = out)
+        data['block'].append({'task_count': count, 'name': block })
       block = b
       count = 1
     else:
       count += 1
-  print(f'  <th colspan="{count}">{block}</th>', file = out)
-  print("  </tr>", file = out)
 
-  print("  <tr>", file = out)
-  print("  <td></td>", file = out)
-  for t in tasks:
-    block, id = t.split('.')
-    print("  <td>", id, "</td>", file = out)
-  print("  <td></td>", file = out) # total
-  print("</tr>", file = out)
-  print("</thead>", file = out)
+  data['block'].append({'task_count': count, 'name': block })
 
+  data['task'] = [{'id': t.split('.')[-1]} for t in tasks]
 
-  print("<tbody>", file = out)
   for k, v in sorted(rating.items(), key = lambda item: -sum(map(string_to_int, item[1]))):
-    print("<tr>", file=out)
-    print("  <th>", k, "</th>", file = out)
-
+    student = {'name': k, 'total': sum(map(string_to_int, v)) }
+    score = []
     for s in v:
-      if s in ['6', '7', '8']:
-        print("  <td><b>", s, "<b/></td>", file = out)
-      elif s == 'x':
-        print('  <td class="text-muted">', s, "</td>", file = out)
-      else:
-        print("  <td>", s, "</td>", file = out)
+      style = 'text-muted' if s == 'x' else ''
+      bold = s in ['6', '7', '8']
+      score.append({'value': s, 'style': style, 'bold': bold})
 
-    print(  "<td><b>", sum(map(string_to_int, v)), "</b></td>", file = out)
-    print("</tr>", file=out)
-  print("</tbody>", file = out)
+    student['score'] = score
+    data['student'].append(student)
 
-  return out.getvalue()
+  return data
 
 def string_to_int(v):
   return int(v) if v.isnumeric() else 0
 
 def gen_rating(template, tasks, score):
-  return template.replace('{{table}}', gen_table(tasks, score))
+  return chevron.render(template, gen_data(tasks, score))
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--rating', type=str,
