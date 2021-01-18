@@ -43,10 +43,7 @@
               <tr>
                 <th>{{name}}</th>
                 {{#score}}
-                <td class="{{style}}">
-                  {{#bold}}<b>{{value}}</b>{{/bold}}
-                  {{^bold}}{{value}}{{/bold}}
-                </td>
+                <td class="{{style}}">{{#bold}}<b>{{value}}</b>{{/bold}}{{^bold}}{{value}}{{/bold}}</td>
                 {{/score}}
                 <td><b>{{total}}</b></td>
               </tr>
