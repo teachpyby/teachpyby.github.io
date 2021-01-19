@@ -25,6 +25,11 @@ def gen_lessons(directory, template):
 
         with open(dst_path, 'w') as out:
             out.write(lesson)
+
+        if not os.path.exists(os.path.join(directory, slides)):
+          with open(os.path.join(directory, slides), 'w') as out:
+            out.write(f'## {title}\n')
+
         print('.', end='', flush=True)
         generated.append((dst_path, title))
 
