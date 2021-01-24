@@ -16,10 +16,12 @@ def read_rating(file):
   return (tasks, score)
 
 def gen_data(tasks, rating):
+  need_score = (len(tasks) - 3) * 5
   data = {
     'block': [],
     'task': [],
-    'student': []
+    'student': [],
+    'need_score': need_score
   }
 
   block = None
@@ -47,6 +49,9 @@ def gen_data(tasks, rating):
       score.append({'value': s, 'style': style, 'bold': bold})
 
     student['score'] = score
+
+    # Условие прохождения блока: (N - 3) * 5, где N - количество решенных задач
+    student['pass'] = student['total'] >= need_score
     data['student'].append(student)
 
   return data

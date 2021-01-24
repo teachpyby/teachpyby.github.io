@@ -36,16 +36,17 @@
                 {{#task}}
                 <td>{{id}}</td>
                 {{/task}}
+                <td style="border-left: 1px solid black;"><b>{{need_score}}</b></td>
               </tr>
             </thead>
             <tbody>
               {{#student}}
               <tr>
-                <th>{{name}}</th>
+                <th>{{#pass}}<i class="fas fa-trophy text-warning"></i>{{/pass}}&nbsp;{{name}}</th>
                 {{#score}}
                 <td class="{{style}}">{{#bold}}<b>{{value}}</b>{{/bold}}{{^bold}}{{value}}{{/bold}}</td>
                 {{/score}}
-                <td><b>{{total}}</b></td>
+                <td style="border-left: 1px solid black;"><b>{{total}}</b></td>
               </tr>
               {{/student}}
             </tbody>
