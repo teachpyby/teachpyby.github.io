@@ -12,7 +12,8 @@
 
 ## Библиотека math
 
-```python [1|2|3|4|5]
+```python [1|2|3|4|5|6]
+>>> import math
 >>> math.ceil(4.8) # 5
 >>> math.ceil(4.2) # ?
 >>> math.ceil(-1.5) # ?
