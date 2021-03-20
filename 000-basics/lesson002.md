@@ -1,122 +1,3 @@
-## Задача про коня
-
-> Шахматный конь ходит буквой “Г” — на две клетки по вертикали в любом направлении
-> и на одну клетку по горизонтали, или наоборот. Даны две различные клетки
-> шахматной доски, определите, может ли конь попасть с первой клетки на вторую
-> одним ходом.
-
-
-![alt text](./assets/knight_move.jpg)
-
-
-## Подготовка
-
-Модуль числа.
-
-`$$ |x| = \left\{
-   \begin{array}{rl}
-     x, & \text{if }  x \geq 0 \\
-     -x, & \text{if } x < 0.
-   \end{array}\right. $$`
-
-На примере
-
-`$$ |-5| =  5$$`
-`$$ |5| = 5$$`
-
-
-`$$ (dx, dy) $$`
-```
-A    ( 1,  2), B    ( 2,  1),
-A'   (-1,  2), B'   (-2,  1),
-A''  (-1, -2), B''  (-2, -1),
-A''' ( 1, -2), B''' ( 2, -1)
-```
-
-
-![alt text](./assets/knight_move_dx_dy.png)
-
-
-`$$ (|dx|, dy) $$`
-```
-A    ( 1,  2), B    ( 2,  1),
-A''' ( 1, -2), B''' ( 2, -1)
-```
-
-
-![alt text](./assets/knight_move_absdx_dy.png)
-
-
-`$$ (|dx|, |dy|) $$`
-
-```
-A    ( 1,  2), B    ( 2,  1)
-```
-
-
-![alt text](./assets/knight_move_absdx_absdy.png)
-
-
-```python
-dx = abs(x1 - x0)   # |x1 - x0|
-dy = abs(y1 - y0)   # |y1 - y0|
-
-if (dx == 1 and dy == 2) or (dx == 2 and dy == 1):
-    print("YES")
-else:
-    print("NO")
-```
-
-
-## Длинное решение
-
-```python
-dx = x1 - x0
-dy = y1 - y0
-
-if (dx == 1 and dy == 2) or (dx == 2 and dy == 1):
-    print("YES")
-elif (dx == -1 and dy == 2) or (dx == -2 and dy == 1):
-    print("YES")
-elif (dx == -1 and dy == -2) or (dx == -2 and dy == -1):
-    print("YES")
-elif (dx == 1 and dy == -2) or (dx == 2 and dy == -1):
-    print("YES")
-else:
-    print("NO")
-```
-
-
-## Разбор строки с координатами
-
-```python
-move = input()     # => 'd5f7'
-x0 = ord(move[0])  # ord('d')  => 100
-y0 = int(move[1])  # int('5')  => 5
-x1 = ord(move[2])  # ord('f')  => 101
-y1 = int(move[3])  # int('7')  => 7
-```
-
-
-## Если хотим "нормировать" координаты с буквами
-
-```python
-x0 = ord(move[0]) - ord('a')
-x1 = ord(move[0]) - ord('a')
-# Но это не нужно потому что
-dx = x1 - x0
-# Что эквивалентно
-dx = (ord(move[1]) - ord('a')) - (ord(move[0]) - ord('a'))
-   = ord(move[1]) - ord(move[0])
-```
-
-
-## Полное решение
-
-[Решение](./solutions/001_knight_move.py)
-
-
-
 ## Действительные числа
 
 ```python
@@ -163,36 +44,66 @@ radians(x)
 
 
 
-### Практическая задача
+### Практическая задача №2
 
-Дано положительное действительное число X. Выведите его первую цифру после десятичной точки. (4. **9** 234523)
+За день машина проезжает n километров. Сколько дней нужно, чтобы проехать маршрут длиной m километров? Программа получает на вход числа n и m.
 
 
 #### Решение
 ``` python
 import math
 
-a = float(input())
+n = int(input())
+m = int(input())
 
-print(int(a * 10) % 10)
+print(math.ceil(m / n))
+```
 
+
+
+
+### Практическая задача №2
+
+Условие
+Улитка ползет по вертикальному шесту высотой h метров, поднимаясь за день на a метров, а за ночь спускаясь на b метров. На какой день улитка доползет до вершины шеста?
+
+Программа получает на вход натуральные числа h, a, b.
+
+Программа должна вывести одно натуральное число. Гарантируется, что a>b.
+
+
+#### Решение
+``` python
+import math
+
+h = int(input())
+a = int(input())
+b = int(input())
+
+h0 = h - a
+d = 0
+if h0 <= 0:
+    h0 = 0
+
+d = math.ceil(h0 / (a-b))
+
+print(d + 1)
 ```
 
 
 
 ## Цикл for
 ```python
-i = 1
-for color in 'red', 'orange', 'yellow',
-  'green', 'cyan', 'blue', 'violet':
-    print('#', i, ' color of rainbow is ', color, sep = '')
-    i += 1
+for name in 'uberkek', 'Monolith986', 'Staivon',
+  '@Vikusssa', 'KloyJokes', 'TheDiamondX', 'Cвета', 'Матвей':
+    print(name, ', ты сделал домашку?', sep='')
+```
 
-####
-cities = ['Minsk', 'Gomel', 'Grodno',
-  'Vitebsk', 'Mogilev', 'Brest']
-for city in cities:
-  print(city, ' - city in Belarus')
+```python
+pupils = ['uberkek', 'Monolith986', 'Staivon',
+  '@Vikusssa', 'KloyJokes', 'TheDiamondX', 'Cвета', 'Матвей']
+for pupil in pupils:
+  print(pupil, ', ты сделал домашку?', sep='')
 
 ```
 
@@ -201,63 +112,76 @@ for city in cities:
 ## range
 
 ```python
-for i in range(4):  # равносильно инструкции for i in 0, 1, 2, 3:
-  print(i ** 2)
+banana0_price = int(input())
+for i in 1, 2, 3, 4:
+  print(f'стоимость банана {i} - {banana0_price * i}')
+```
+
+
+```python
+banana0_price = int(input())
+banana_total = int(input())
+for i in range(banana_total):  # то же самое: for i in 0, 1, 2, 3, ..., banana_total:
+  print(f'стоимость банана {i} - {banana0_price * i}')
 ```
 
 
 
 ## Цикл while
 
-```python
-i = 1
-while i <= 10:
-  print(i ** 2)
+```python [0|5-7]
+banana0_price = int(input())
+banana_total = int(input())
+i = 0
+while i <= banana_total:
+  print(f'стоимость банана {i} - {banana0_price * i}')
   i += 1
 ```
 
-```python
-i = 1
-while i <= 10:
-  print(i)
-  i += 1
-else:
-  print('Цикл окончен, i =', i)
-```
 
 
-```python [|5|7]
-a = int(input())
-while a != 0:
-  if a < 0:
-    print('Встретилось отрицательное число', a)
+## Инструкция `break`
+
+Мама сказала купить `N` бананов и дала `K` денег. . Первый банан стоит `M` рублей. Второй банан стоит `M * 2` рублей и так далее.
+После каждого купленного банана перед мамой надо отчитываться. В конце нужно вывести сколько бананов было куплено
+
+
+```python [0|1-2|3|4|7|12]
+banana_total = int(input('Сколько мама сказала купить бананов: '))
+available_money = int(input('Сколько мама дала денег: '))
+banana0_price = int(input('Стоимость первого банана: '))
+bananas_count = 0
+for i in range(1, banana_total):
+  banana_i_price = banana0_price * i
+  if available_money - banana_i_price > 0:
+    available_money = available_money - banana_i_price
+    bananas_count += 1
+    print(f'Мам, я купил банан за {banana_i_price}, у меня осталось {available_money} денег')
+  else:
     break
-  a = int(input())
-print('Введен 0')
+print(f'Я купил {bananas_count} бананов')
+
 ```
 
 
 
-## Утренняя пробежка
+## Лесенка
+
+По данному натуральному n ≤ 9 выведите лесенку из n ступенек, i-я ступенька состоит из чисел от 1 до i без пробелов.
+Например:
+Ввод:
+4
+Вывод:
+1
+12
+123
+1234
+
+
+
+## Потерянная карточка
+
 Условие
-В первый день спортсмен пробежал **`x`** километров, а затем он каждый день увеличивал пробег на **`10%`**
-от предыдущего значения. По данному числу **`y`** определите номер дня, на который пробег спортсмена составит не менее **`y`** километров.
-
-Программа получает на вход **действительные** числа `x` и `y` и должна вывести одно натуральное число.
-
-
-## Решение
-
-```python
-a = float(input())
-b = float(input())
-
-total = a
-counter = 1
-
-while total < b:
-  total = total * 1.1
-  counter += 1
-print(counter)
-```
+Для настольной игры используются карточки с номерами от 1 до N. Одна карточка потерялась. Найдите ее, зная номера оставшихся карточек.
+Дано число N, далее N − 1 номер оставшихся карточек (различные числа от 1 до N). Программа должна вывести номер потерянной карточки.
 
