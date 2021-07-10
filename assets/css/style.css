@@ -436,9 +436,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .icon-boxes {
   margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 
 #hero .icon-box {
+  width: 230px;
   padding: 50px 30px;
   position: relative;
   overflow: hidden;
