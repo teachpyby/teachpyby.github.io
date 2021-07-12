@@ -1,253 +1,358 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<title>Teachpyby</title>
+  <title>Teachpyby</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/986cefc0d9.js" crossorigin="anonymous"></script>
+  <!-- Favicons -->
+  <link href="/assets/svg/python-language-logo.svg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.3.0
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <span><a href="https://github.com/teachpyby"><i class="fab fa-github"></i></a> teachpyby</span>
-      <a href="./rating/2021.html">Рейтинг</a>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Teachpyby</a></h1>
     </div>
-  </nav>
-	<div class="container pt-5">
-		<div class="container-fluid">
-			<h2>Занятия</h2>
-			<br />
-			<h4>Основы Python</h4>
-			<ul class="fa-ul">
-				<li>
-					<span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span>
-					<a href="./000-basics/lesson001.html">001 Выражения.
-						Ввод-вывод. Условия.
-					</a>
-					<details>
-						<summary>Задачи</summary>
-						<ol>
-							<li><a href="https://pythontutor.ru/lessons/inout_and_arithmetic_operations/problems/apples/" target="_blank">Дележ яблок</a>
-							</li>
-							<li><a href="https://pythontutor.ru/lessons/inout_and_arithmetic_operations/problems/desks/" target="_blank">Парты</a></li>
-							<li><a href="https://pythontutor.ru/lessons/inout_and_arithmetic_operations/problems/shoelace/" target="_blank">Шнурки</a></li>
-							<li><a href="https://pythontutor.ru/lessons/ifelse/problems/minimum3/" target="_blank">Минимум из трех чисел</a></li>
-							<li><a href="https://pythontutor.ru/lessons/ifelse/problems/knight_move/" target="_blank">Ход коня</a></li>
-						</ol>
-					</details>
-				</li>
-				<li>
-					<span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span><a href="./000-basics/lesson002.html">002 Вычисления. Модуль
-						math. Циклы</a>
-					<details>
-						<summary>Задачи</summary>
-						<ol>
-							<li><a href="https://pythontutor.ru/lessons/int_and_float/problems/digit_after_separator/" target="_blank">Первая цифра после
-									точки</a>
-							</li>
-							<li><a href="https://pythontutor.ru/lessons/int_and_float/problems/konec_urokov/" target="_blank">Конец уроков</a></li>
-							<li><a href="https://pythontutor.ru/lessons/for_loop/problems/series_3/" target="_blank">Ряд 3</a></li>
-							<li>
-								<details>
-									<summary>Количество нулей в записи числа</summary>
-									<div>
-										Программа принимает на вход натуральное число. Необходимо вывести в консоль количество нулей в записи этого числа.
-										Например:
-										<code>
-										  a = 903500290
-										</code>
-										результат - 4
-									</div>
-								</details>
-							</li>
-							<li>
-								<details>
-									<summary>Счастливый билет</summary>
-									<div>
-										Троллейбусный (трамвайный) билет имеет номер, состоящий из шести цифр. Билет считается счастливым, если сумма первых
-										трёх цифр равна сумме последних трёх, например, 024321
-									</div>
-									<div>
-										<b>
-											В единственной строке подаваемой на ввод записано одно целое число. Нужно вывести «YES», если билет с номером N
-											счастливый и «NO» в противном случае.
-										</b>
-									</div>
-								</details>
-							</li>
-							<li>
-								<details>
-									<summary>Угадай число</summary>
-									<div>
-										Пользователь загадывает целое число N (1 ≤ N ≤ 10<sup>9</sup>), которое ваша программа должна будет отгадать не более чем за 100
-										попыток. Вы можете делать запросы путем вывода числа из возможного диапазона целых чисел. В ответ на каждый запрос
-										пользователь будет сообщать результат сравнения загаданного числа с числом в запросе.
-									</div>
-									<div style="white-space: pre-line">
-										Например:
-										Пользователь загадал 20
-										Вариант вывода программы:
-										25
-										Пользователь вводит: &#60;
-										12
-										Пользователь вводит: &#62;
+  </header><!-- End Header -->
 
-										...
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h1>Интересует программирование? Присоединяйся!</h1>
+        </div>
+      </div>
+      <p class="text-center" style="margin-top: 50px;">
+        С начала учебного года мы планируем запустить три направления:
+      </p>
 
-										20
-										Пользователь вводит: =
-										Ура, я отгадал!
-									</div>
-								</details>
-							</li>
-						</ol>
-					</details>
-				</li>
-				<li>
-					<span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span><a href="./000-basics/lesson003.html">003 Cписки</a>
-					<details>
-						<summary>Задачи</summary>
-						<ol>
-							<li>
-								<details>
-									<summary>Проверить, является ли слово, строка, число палиндромом</summary>
-									<div style="white-space: pre-line">
-										Палиндром — это строка(или число), которое можно прочитать одинаково справа налево, либо слева направо.
+      <div class="row icon-boxes">
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon">
+              <img width="50" height="50" src="./assets/svg/python-language-logo.svg" class="svg-icon">
+            </div>
+            <h4 class="title"><a href="#zero">Python с нуля</a></h4>
+            <p class="description">Для ребят, которые никогда не программировали вообще
+              или не программировали на Python. После прохождения курса ты познакомишься с Python, узнаешь основные
+              языковые конструкции и операторы, научишься правильно их использовать</p>
+          </div>
+        </div>
 
-										К примеру, слово «кот» не является палиндромом, а слово «потоп» является палиндромом. Также и с числами: число 12314 —
-										не палиндром, число 345543 — палиндром.
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon">
+              <img width="50" height="50" src="./assets/svg/game.svg" class="svg-icon">
+            </div>
+            <h4 class="title"><a href="#game">Программирование игр</a></h4>
+            <p class="description"> Мы расскажем о том, как устроены игры внутри. На этом курсе ты сделаешь свою
+              собственную игру с помощью Python
+            </p>
+          </div>
+        </div>
 
-										На вход поступает строка. Вывод - ответ YES/NO.
-									</div>
-								</details>
-							</li>
-							<li>
-								<details>
-									<summary>Склеить две упорядоченные последовательности в одну.</summary>
-									<div style="white-space: pre-line">
-										На вход поступает 2 упорядоченные последовательности
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <div class="icon"><img width="50" height="50" src="./assets/svg/algorithm.svg" class="svg-icon"></div>
+            <h4 class="title"><a href="#algorithm">Алгоритмы на Python</a></h4>
+            <p class="description"> Есть много крутых алгоритмов, которые
+              незаметно упрощают программистам жизнь. Ты узнаешь об основных алгоритмах и научишься их применять</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
 
-										Например
-										<code>
-										[1, 2, 3, 10, 20]
-										[2, 4, 5, 11, 20, 30]
-				            </code>
-										Вывод:
-										<code>[1, 2, 2, 3, 4, 5, 10, 11, 20, 20, 30]</code>
-									</div>
-								</details>
-							</li>
-							<li><a href="https://pythontutor.ru/lessons/lists/problems/num_equal_pairs/" target="_blank">Количество совпадающих пар</a></li>
-							<li><a href="https://pythontutor.ru/lessons/lists/problems/more_than_neighbours/" target="_blank">Больше своих соседей</a></li>
-							<li><a href="https://pythontutor.ru/lessons/str/problems/two_halves/" target="_blank">Две половинки</a></li>
-							<li><a href="https://pythontutor.ru/lessons/str/problems/num_words/" target="_blank">Количество слов</a></li>
-						</ol>
-					</details>
-				</li>
-        <li>
-					<span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span><a href="./000-basics/lesson004.html">004 Строки</a>
-					<details>
-						<summary>Задачи</summary>
-						<ol>
-							<li><a href="http://pythontutor.ru/lessons/str/problems/slices/" target="_blank">Делаем срезы</a></li>
-							<li><a href="http://pythontutor.ru/lessons/str/problems/replace_substring/" target="_blank">Замена подстроки</a></li>
-							<li><a href="http://pythontutor.ru/lessons/str/problems/reverse_chunk/" target="_blank">Обращение фрагмента</a></li>
-							<li><a href="http://pythontutor.ru/lessons/str/problems/replace_in_chunk/" target="_blank">Замена внутри фрагмента</a></li>
-						</ol>
-					</details>
-				</li>
+  <main id="main">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
 
-        <li>
-					<span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span><a href="./000-basics/lesson005.html">005 Функции.  Рекурсия</a>
-					<details>
-						<summary>Задачи</summary>
-						<ol>
-							<li><a href="http://pythontutor.ru/lessons/functions/problems/fibonacci_rec/" target="_blank">Фибоначчи</a></li>
-							<li><a href="http://pythontutor.ru/lessons/functions/problems/capitalize/" target="_blank">Capitalize</a></li>
-							<li>
-								<details>
-									<summary>Решето Эратосфена</summary>
-									<div style="white-space: pre-line">
-										На вход поступает натуральное число N. Необходимо вывести в консоль все простые числа, меньшие N в порядке возрастания.
-										Необходимо решить задачу используя алгоритм "<a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%88%D0%B5%D1%82%D0%BE_%D0%AD%D1%80%D0%B0%D1%82%D0%BE%D1%81%D1%84%D0%B5%D0%BD%D0%B0" target="_blank">Решето Эратосфена</a>"
-									</div>
-								</details>
-							</li>
-							<li>
-								<details>
-									<summary>Число Армстронга</summary>
-									<div style="white-space: pre-line">
-										На вход поступает натуральное число N. Нужно вывести в консоль True если введённое число является <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%88%D0%B5%D1%82%D0%BE_%D0%AD%D1%80%D0%B0%D1%82%D0%BE%D1%81%D1%84%D0%B5%D0%BD%D0%B0" target="_blank">числом Армстронга</a>
-									</div>
-								</details>
-							</li>
-							<li>
-								<details>
-									<summary>Проверка изограмм</summary>
-									<div style="white-space: pre-line">
-										Определите, является ли слово или фраза изограммой.
-										Изограмма (также известная как «слово без шаблона») - это слово или фраза без повторяющейся буквы, однако пробелы и дефисы могут встречаться несколько раз.
-										Например:
-										Андрей - изограмма
-										Анастасия - нет
-									</div>
-								</details>
-							</li>
-						</ol>
-					</details>
-				</li>
-        <li>
-					<span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span><a href="./000-basics/lesson006.html">006 Словари (Dict)</a>
-					<details>
-						<summary>Задачи</summary>
-						<ol>
-							<li><a href="http://pythontutor.ru/lessons/dicts/problems/permissions/" target="_blank">Права доступа</a></li>
-							<li><a href="http://pythontutor.ru/lessons/dicts/problems/countries_and_cities/" target="_blank">Страны и города</a></li>
-							<li><a href="http://pythontutor.ru/lessons/dicts/problems/english_latin_dict/" target="_blank">Англо-латинский словарь</a></li>
-							<li>
-								<details>
-									<summary>Преобразование времени</summary>
-									<div style="white-space: pre-line">
-										Дано количество секунд прошедших с настоящего времени. Вывести строку, которая представляет этот промежуток в человеческом виде:
+        <div class="section-title">
+          <h2>Примеры работ наших учеников</h2>
+          <p></p>
+        </div>
 
-										15 - 15 секунд назад
-										60 - 1 минуту назад
-										65 - 1 минуту назад
-										120 - 2 минуты назад
-										1800 - пол часа назад
-										2700 - 45 минут назад
-										3600 - 1 час назад
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
 
-										Время округляется до большего значения. Если время больше минуты, выводим в минутах. Если больше часа в часах, если больше суток то в днях.
-									</div>
-								</details>
-							</li>
-						</ol>
-					</details>
-				</li>
-        <li><span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span>007</li>
-			</ul>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="./assets/gif/snake.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Змейка</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
 
-			<p>При подготовке уроков использовались материалы сайта <a href="https://pythontutor.ru/">https://pythontutor.ru/</a>.</p>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="./assets/gif/tetris.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Тетрис</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Давайте с нами!</h3>
+          <p>Если вас заинтересовало хотя бы одно из направлений, то регистрируйтесь к нам на занятия! </p>
+          <a class="cta-btn" href="https://forms.gle/KixTseUMVUEaooKK6" target="_blank">Зарегистрироваться</a>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
 
-			<h4>Pygame. Основы разработки игр</h4>
-			<ul class="fa-ul">
-				<li><span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span>101 Игровой цикл. FPS. Измерение времени</li>
-				<li><span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span>102 Текстура. Спрайт. Сцена. Рисование 2D объектов</li>
-				<li><span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span>103 Перемещение объектов и простейшее анимирование</li>
-				<li><span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span>104 Коллизии объектов</li>
-        <li><span class="fa-li"><i class="fas fa-chalkboard-teacher"></i></span>105 Чтение файлов. Загрузка ресурсов игры</li>
-			</ul>
-		</div>
-	</div>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <section id="" class="about">
+          <div class="container" data-aos="fade-up">
+
+            <div class="row">
+
+              <div class="col-lg-12 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+                <h3>О проекте</h3>
+
+                <p>
+                  Наш проект начался в ноябре 2020го года.
+                  За это время мы успели провести наши занятия для двух потоков учащихся, каждый поток длился примерно 3
+                  месяца, 2 занятия по 1 часу в неделю. Первый
+                  раз у нас не очень хорошо получилось (ведь первый блин всегда комом!). Во второй раз мы сделали работу
+                  над
+                  ошибками и получилось намного интереснее и разнообразнее. Мы вместе изучали основы языка
+                  программирования
+                  Python,
+                  делали домашку на codeforces.ru и ближе к концу курса ребята самостоятельно запрограммировали
+                  змейку :)
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title  section-bg">
+          <h2>Кто мы</h2>
+          <div class="row content">
+            <p class="col-12">
+              Привет! Мы Саша, Илья, Олег и Света, программисты и просто хорошие ребята.
+              Как часть инициативы <a href="https://teach4.by">“Учитель для Беларуси”</a> мы <b>бесплатно</b> преподаем
+              Python онлайн школьникам из разных уголков Беларуси.
+            </p>
+          </div>
+        </div>
+
+        <div class="row row-lg-cols-5 m-5">
+          <div class="col-lg col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/sasha_y.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Саша</h4>
+                <span class="text-muted">Targetprocess</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/ilya_a.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Илья</h4>
+                <span class="text-muted">Vizor Games</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/oleg_k.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Олег</h4>
+                <span class="text-muted">Vizor Games</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/sveta_m.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Света</h4>
+                <span class="text-muted">Google</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <div class="icon"><img src="./assets/img/generic-avatar.png" class="img-fluid"></div>
+              </div>
+              <div class="member-info">
+                <h4 class="text-center">Хочешь к нам?</h4>
+                <a class="text-muted"
+                  href="mailto:pythonclubby@gmail.com?subject=[pythonclubby]became_volonteer">Напиши!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Контакты</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12  col-lg-4 offset-lg-4 info">
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p><a href="mailto:pythonclubby@gmail.com">pythonclubby@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- End Contact -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Частые вопросы</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                data-bs-target="#faq-list-1">Как проходят занятия? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Занятия проходят в Zoom'e. Также для обучения мы используем платформы replit.com и codeforces.ru.
+                  На занятиях мы вместе разбираем новые темы. Эти темы мы закрепляем с помощью квизов, домашних и
+                  самостоятельных работ.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+                class="collapsed">Что необходимо иметь для занятий? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Необходимо, чтобы у вас был компьютер. Посколько занятия проходят онлайн, то также необходимо, чтобы у
+                  вас был микрофон и желательно камера. Если у вас на компьютере нету микрофона, то можно использовать
+                  одновременно и телефон и компьютер - телефон использовать, чтобы иметь возможнось общаться с другими
+                  участниками и преподавателями. А компьютер использовать для написания кода.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="me-md-auto text-center text-md-start">
+        <div class="credits">
+          <div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> <a
+              href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+              title="Flaticon">www.flaticon.com</a></div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
