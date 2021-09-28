@@ -1,9 +1,8 @@
 #!/bin/bash
 
-NGINX_PORT="1080"
-docker build -t teachpyby.github.io:latest .
+PORT="1080"
 echo ""
-echo "> Open http://localhost:$NGINX_PORT/ "
+echo "> Open http://localhost:$PORT/ "
 echo ""
 echo ""
-docker run -v "$(pwd):/var/www/data" -p$NGINX_PORT:80 teachpyby.github.io:latest
+python -m http.server $PORT --bind localhost --directory $(pwd)
