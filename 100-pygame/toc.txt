@@ -1,1 +1,3 @@
 ./lesson101.md Игровой цикл. FPS. Измерение времени
+./lesson102.md Классы
+./lesson103.md Sprite
