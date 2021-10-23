@@ -1,6 +1,6 @@
 ./lesson001.md Выражения. Ввод-вывод. Условия
 ./lesson002.md Вычисления. Модуль math
-./lesson002-1.md Циклы
+./lesson002b.md Циклы
 ./lesson003.md Списки
 ./lesson004.md Строки
 ./lesson005.md Функции. Рекурсия
