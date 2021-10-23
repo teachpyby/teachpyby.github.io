@@ -117,3 +117,28 @@ for i in range(1, 101):
     print(i)
 ```
 ![continue/break](./assets/continue_break.jpeg)
+
+
+
+
+```python
+1) for seconds in range(60):
+    print(seconds)
+2) for minutes in range(60):
+    for seconds in range(60):
+        print(minutes, ':', seconds)
+3) for hours in range(24):
+    for minutes in range(60):
+        for seconds in range(60):
+            print(hours, ':', minutes, ':', seconds)
+```
+
+
+```
+0 : 0 : 0
+0 : 0 : 1
+0 : 0 : 2
+...
+23 : 59 : 58
+23 : 59 : 59
+```
