@@ -6,6 +6,7 @@ install:
 gen_static:
 	${PYTHON} scripts/gen_static.py \
 		--dir 000-basics  \
+		--dir 000-turtle  \
 		--dir 100-pygame  \
 		--lesson_template template/lesson.html
 
