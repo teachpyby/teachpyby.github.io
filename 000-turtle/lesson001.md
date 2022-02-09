@@ -28,7 +28,7 @@ turtle.backward(200)     # => назад
 ## Повороты
 ```python
 turtle.right(90)     # => направо
-turtle.forward(100) 
+turtle.forward(100)
 turtle.left(90)     # => налево
 turtle.backward(100)
 ```
@@ -55,14 +55,14 @@ turtle.backward(100)
 
 ## Пунктирная линия. ??Как сделать так??
 
-![image](http://itrobo.ru/upload/wysiwyg/9801ab5206e17ba645cf21a837def15c.jpg)
+![image](./assets/dashed.jpeg)
 
 
 
 
 ## Перо
 ```python
-import turtle 
+import turtle
 
 turtle.forward(8)
 turtle.up()   # => поднять
@@ -74,7 +74,7 @@ turtle.down()   # => опустить
 
 ## Окружность. Точка
 ```python
-import turtle 
+import turtle
 
 turtle.circle(50)    # => r-радиус
 turtle.circle(50,90)    # => ϕ-часть окружности в градусах
@@ -84,13 +84,13 @@ turtle.dot(50)    # => круг
 
 
 
-## Задание 4. Рисуем смайлы 
+## Задание 4. Рисуем смайлы
 
-![image](http://zabavnik.club/wp-content/uploads/black_and_white_emoticons_11_08133508.jpg)
+![image](./assets/smiles.jpeg)
 
 
 
 ## Задание 5. В мире животных
 
-![image](http://word-office.ru/wp-content/uploads/2018/11/kak-sdelat-raskrasku-v-powerpoint-1.jpg)
+![image](./assets/animals.jpeg)
 
