@@ -72,33 +72,25 @@ turtle.down()   # => опустить
 
 
 
-## 
+## Окружность. Точка
 ```python
- 
+import turtle 
+
+turtle.circle(50)    # => r-радиус
+turtle.circle(50,90)    # => ϕ-часть окружности в градусах
+
+turtle.dot(50)    # => круг
 ```
 
 
 
-## 
-```python
- 
-```
+## Задание 4. Рисуем смайлы 
+
+![image](http://zabavnik.club/wp-content/uploads/black_and_white_emoticons_11_08133508.jpg)
 
 
 
-## 
-```python
- 
-```
+## Задание 5. В мире животных
 
+![image](http://word-office.ru/wp-content/uploads/2018/11/kak-sdelat-raskrasku-v-powerpoint-1.jpg)
 
-## 
-```python
- 
-```
-
-
-## 
-```python
- 
-```
