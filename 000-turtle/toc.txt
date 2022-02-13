@@ -3,3 +3,4 @@
 ./lesson003.md Циклы
 ./lesson004.md Функции
 ./lesson005.md Рекурсия
+./index.md Turtle. Ресурсы
