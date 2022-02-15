@@ -8,6 +8,7 @@ gen_static:
 		--dir 000-basics  \
 		--dir 000-turtle  \
 		--dir 100-pygame  \
+		--dir 100-html  \
 		--lesson_template template/lesson.html
 
 gen_rating:
