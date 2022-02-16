@@ -195,10 +195,10 @@ const square = (num) => {
 
 
 ### Дополнительная информация + Домашка
-[Интерактивный курс "HTML для начинающих" (!!! ДОМАШКА)](https://ru.code-basics.com/languages/html)
-[WebReference](https://webref.ru/course/html-basics)
-[Основы HTML](https://webref.ru/course/html-basics)
-[Содержимое в HTML](https://webref.ru/course/html-content)
-[Самоучитель HTML](https://webref.ru/course/html-tutorial)
-[Разделы веб-страницы](https://webref.ru/course/section)
-[Формы в HTML](https://webref.ru/course/html5-form)
+ - [Интерактивный курс "HTML для начинающих" (!!! ДОМАШКА)](https://ru.code-basics.com/languages/html)
+ - [WebReference](https://webref.ru/course/html-basics)
+ - [Основы HTML](https://webref.ru/course/html-basics)
+ - [Содержимое в HTML](https://webref.ru/course/html-content)
+ - [Самоучитель HTML](https://webref.ru/course/html-tutorial)
+ - [Разделы веб-страницы](https://webref.ru/course/section)
+ - [Формы в HTML](https://webref.ru/course/html5-form)
