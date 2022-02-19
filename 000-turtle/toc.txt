@@ -1,6 +1,7 @@
 ./lesson001.md Библиотека Turtle. Базовые команды
 ./lesson002.md Условия. Интерактив с помощью input
-./lesson003.md Циклы
-./lesson004.md Функции
-./lesson005.md Рекурсия
+./lesson003.md Заливка, цвет пера, командная работа
+./lesson004.md Циклы
+./lesson005.md Функции
+./lesson006.md Рекурсия
 ./index.md Turtle. Ресурсы

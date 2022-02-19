@@ -22,13 +22,13 @@
 
 
 
-### 
+###
 ![image](C:\Users\polzovatel\OneDrive\Изображения\Снимки экрана\Квадрат.png)
 
 
 
 
-### 
+###
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20200617210311/star.gif)
 
 
@@ -45,23 +45,3 @@ turtle.setpos() перемещает перо на заданную позици
 turtle.setx() устанавливает координату пера x,
 turtle.sety() устанавливает координату пера y,
 ```
-
-### Случайные звезды на небе:
-![image](C:\Users\polzovatel\OneDrive\Изображения\Снимки экрана\Звезды.png)
-
-
-### Нарисовать спираль
-
-Note:
-Начать с квадратной, потом перейти к круглой.
-
-
-
-### Домашняя работа
-
-<img src="./assets/spiral.png" alt="drawing" width="400"/>
-
-
-Note:
-https://dev.to/taarimalta/how-to-draw-a-spiral-with-python-turtle-2n5c
-

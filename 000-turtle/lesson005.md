@@ -1,7 +1,10 @@
-## Рекурсия
+## Функции
 
-https://runestone.academy/ns/books/published//pythonds/Recursion/pythondsintro-VisualizingRecursion.html
-https://stackoverflow.com/questions/46565729/turtle-graphics-with-recursion
-https://cs111.wellesley.edu/~cs111/archive/cs111_spring15/public_html/notes/lectures/10_turtle_recursion_4up.pdf
 
+Note:
+Снежинка
+https://projects.raspberrypi.org/en/projects/turtle-snowflakes/7
+Звёздное небо
+### Случайные звезды на небе:
+![image](C:\Users\polzovatel\OneDrive\Изображения\Снимки экрана\Звезды.png)
 
