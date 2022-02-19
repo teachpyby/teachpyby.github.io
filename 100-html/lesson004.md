@@ -91,6 +91,10 @@
    - [Блочная модель в CSS](https://webref.ru/course/box-model)
    - [Позиционирование в CSS](https://webref.ru/course/positioning)
    - [Продвинутый CSS](https://webref.ru/course/css-advanced)
+
+
+
+### Дополнительная информация + Домашка
  - CSS. Уровень 2
    - [Блочная модель](https://webref.ru/course/block-model)
    - [Блочные и строчные элементы](https://webref.ru/course/block-inline)
