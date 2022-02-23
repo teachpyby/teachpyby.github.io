@@ -1,6 +1,5 @@
 ## Функции
 
-
 Note:
 Снежинка
 https://projects.raspberrypi.org/en/projects/turtle-snowflakes/7

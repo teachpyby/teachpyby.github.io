@@ -59,32 +59,20 @@ for i in range(4):
 [демо](https://replit.com/@PythonClubByBeginner/19-fievralia-20222#main.py)
 
 
-### Задание №4
+
+
+### Домашняя работа
 
 Нарисовать блоки Фибоначчи.
 
 ![image](./assets/fib_blocks.png)
 
-
-
-
-### Домашняя работа №1
-
-<img src="./assets/fibonacci.jpeg" alt="drawing" width="400"/>
-
-
-### Домашняя работа №2
-
-<img src="./assets/spiral.png" alt="drawing" width="400"/>
-
+[проект в repl](https://replit.com/team/PythonClubByBeginner/19-fievralia-20222)
 
 Note:
 Начать с квадратной, потом перейти к круглой.
 Золотое сечение
 Спираль через точку
 кахут на то, чтобы понять код по рисунку.
-
-
-Note:
-https://dev.to/taarimalta/how-to-draw-a-spiral-with-python-turtle-2n5c
+https://t.me/c/1128833556/86 - ревью в internal notes
 
