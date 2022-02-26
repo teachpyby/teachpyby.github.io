@@ -45,6 +45,7 @@ def snowman(base):
 
 <img src="./assets/snowflake.png" alt="drawing" width="400"/>
 
+[Ссылка на проект](https://replit.com/team/PythonClubByBeginner/snowflake)
 
 
 ### Домашняя работа
