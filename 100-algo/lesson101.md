@@ -1,11 +1,3 @@
-## Problem C
-
-[repl](https:#replit.com/team/PythonClubBy/templates/Problem-C)
-
-[cf](https:#codeforces.com/contest/1624/my)
-
-
-
 ## Алгоритмическая сложность
 
 Что такое вычислительная сложность алгоритма?
@@ -39,15 +31,6 @@ for i in range(n): # B
 Пример 2.2
 ```python
 for i in range(n // 2): # B
-  for j in range(i, n-i): # A
-    a[i][j] += 1; # С
-```
-![nn](./img/algorithm_O_nn2_2.png)
-
-
-Пример 2.3
-```python
-for i in range(n): # B
   for j in range(i, n-i): # A
     a[i][j] += 1; # С
 ```
