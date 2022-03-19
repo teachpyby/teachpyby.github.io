@@ -15,8 +15,7 @@ tracer
 ![Пример](./assets/cloud.png)
 
 
-
-### Задача: нарисовать дерево
-
+Note:
+Задача: нарисовать дерево
 <img src="./assets/tree.png" alt="drawing" width="400"/>
 
