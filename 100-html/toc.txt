@@ -1,3 +1,4 @@
 ./lesson003.md Основы HTML
 ./lesson004.md Основы CSS
 ./lesson005.md Практика HTML
+./lesson006.md Практика CSS
