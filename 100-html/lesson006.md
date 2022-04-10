@@ -95,6 +95,16 @@ text-align
 | left     | Выравниевание по левому краю |
 | right    | Выравниевание по правому краю |
 | justify  | Выравниевание по ширине |
+
+Продолжение →
+
+
+
+## 
+text-align
+
+| Значение | Описание |
+| -------- | -------- |
 | auto     | Значение по умолчанию |
 | start    | left, если текст идет слева направо, и right, когда текст идет справа налево (арабский язык и т.п.) |
 | end      | right, если текст идет слева направо и left, когда текст идет справа налево |
@@ -199,6 +209,16 @@ font-family
 | serif	     | Шрифт с засечками |
 | sans-serif | Шрифт без засечек |
 | cursive    | Курсивный шрифт |
+
+Продолжение →
+
+
+
+## 
+font-family
+
+| Семейство  | Описание |
+| ---------- | -------- |
 | fantasy    | Декоративный шрифт с красивыми завитушками и необычными эффектами |
 | monospace  | Моноширинный шрифт, ширина каждого символа в котором одинакова |
 
@@ -254,7 +274,8 @@ font
 Свойство font представляет собой свойство-сокращение, в котором можно использовать следующие свойства CSS: font-size, font-style, font-weight, line-height, font-family, font-variant
 
 ```
-font: [font-style|font-variant|font-weight] font-size [/line-height] font-family;
+font: [font-style|font-variant|font-weight]
+      font-size [/line-height] font-family;
 ```
 
 ```css
