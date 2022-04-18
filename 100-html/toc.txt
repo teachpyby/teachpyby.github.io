@@ -1,5 +1,6 @@
 ./lesson003.md Основы HTML
 ./lesson004.md Основы CSS
 ./lesson005.md Практика HTML
-./lesson006.md Практика CSS
+./lesson006.md Практика CSS. Часть 1
 ./lesson007.md Селекторы CSS
+./lesson008.md Практика CSS. Часть 2
