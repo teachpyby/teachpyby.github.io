@@ -4,3 +4,4 @@
 ./lesson006.md Практика CSS. Часть 1
 ./lesson007.md Селекторы CSS
 ./lesson008.md Практика CSS. Часть 2
+./lesson009.md Практика CSS. Часть 3
